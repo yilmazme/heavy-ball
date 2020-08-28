@@ -105,7 +105,6 @@ body {
   align-items: flex-end;
 }
 #measure-btn {
-  min-width: 5vw;
   background: rgb(54, 53, 53);
   color: white;
   cursor: pointer;
@@ -114,4 +113,9 @@ body {
   background: rgb(54, 53, 53);
   color: white;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  #info {
+    grid-template-columns: auto;
+  }
 }

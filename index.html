@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="bilye, oyun, ağır olanı bul" />
+    <meta name="description" content="finding heavy ball" />
+    <meta name="author" content="Mehmet Yilmaz" />
+    <link rel="icon" href="./icon.png" />
+    <title>heavy ball</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="div1" draggable="true" ondragstart="drag(event)">1</div>
+      <div id="div2" draggable="true" ondragstart="drag(event)">2</div>
+      <div id="div3" draggable="true" ondragstart="drag(event)">3</div>
+      <div id="div4" draggable="true" ondragstart="drag(event)">4</div>
+      <div id="div5" draggable="true" ondragstart="drag(event)">5</div>
+      <div id="div6" draggable="true" ondragstart="drag(event)">6</div>
+      <div id="div7" draggable="true" ondragstart="drag(event)">7</div>
+      <div id="div8" draggable="true" ondragstart="drag(event)">8</div>
+      <div id="div9" draggable="true" ondragstart="drag(event)">9</div>
+    </div>
+    <div id="info">
+      <div>
+        <p>
+          <b> Oyun:</b> 9 bilyeden 8'i özdeş ve her birinin ağırlığı 1 birim
+          iken içlerinden birinin ağırlığı 1.5 birimdir. Ağır olan bilyeyi
+          sadece 2 ölçümde bulabilir misiniz?
+        </p>
+      </div>
+      <div id="warning-div">
+        <button id="reset-btn" onclick="reset()">Yine Oyna</button>
+        <h2 id="warning-text">İkiden fazla ölçüm yaptınız!</h2>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <h3>Ölçüm Sayısı: &nbsp</h3>
+          <h3 id="count">0</h3>
+        </div>
+      </div>
+      <div
+        id="guess-div"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <p id="change-text">Tahmininizi bu alana sürükleyin:</p>
+        <div
+          id="guess"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
+    </div>
+    <div id="balance">
+      <div id="side1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <button id="measure-btn" onclick="measureFun()">Ölç</button>
+      <div id="side2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <br />
+    <div id="recycle-con">
+      <div
+        id="recycle"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+      ÇÖP KUTUSU
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

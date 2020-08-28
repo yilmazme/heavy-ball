@@ -1,0 +1,117 @@
+body {
+  background-color: cadetblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 100px;
+  border-style: none none solid none;
+}
+
+#balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: palegoldenrod;
+  margin-top: 100px;
+  height: 150px;
+  margin-top: 0px;
+}
+
+#side1 {
+  width: 200px;
+  height: 100px;
+  border-style: none solid solid solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+#side2 {
+  width: 200px;
+  height: 100px;
+  border-style: none solid solid solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#div8,
+#div9 {
+  background: linear-gradient(90deg, #721b65, #d1d646);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+#info {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  justify-content: space-around;
+  align-items: center;
+}
+#guess {
+  width: 200px;
+  height: 80px;
+  background: palegoldenrod;
+  border: 2px black dashed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#warning-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#warning-text {
+  color: red;
+  visibility: hidden;
+}
+
+#recycle-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#recycle {
+  width: 200px;
+  height: 150px;
+  border-style: none solid solid solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+#measure-btn {
+  min-width: 5vw;
+  background: rgb(54, 53, 53);
+  color: white;
+  cursor: pointer;
+}
+#reset-btn {
+  background: rgb(54, 53, 53);
+  color: white;
+  cursor: pointer;
+}

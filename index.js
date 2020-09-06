@@ -51,7 +51,6 @@ window.addEventListener("load", () => {
   div7.className = random == 7 ? "heavy" : "";
   div8.className = random == 8 ? "heavy" : "";
   div9.className = random == 9 ? "heavy" : "";
-  console.log(random);
 });
 
 function reset() {

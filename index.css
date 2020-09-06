@@ -28,10 +28,10 @@ body {
   height: 100px;
   border-style: none solid solid solid;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   flex-direction: row-reverse;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   border-radius: 10px;
 }
 #side2 {
@@ -39,9 +39,10 @@ body {
   height: 100px;
   border-style: none solid solid solid;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   border-radius: 10px;
 }
 
@@ -117,5 +118,15 @@ body {
 @media (max-width: 600px) {
   #info {
     grid-template-columns: auto;
+  }
+  #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+
+    height: 100px;
+    border-style: none none solid none;
   }
 }
